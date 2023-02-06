@@ -8,11 +8,12 @@
         <div style="text-align:center;padding:1em 0;"> <h3><a style="text-decoration:none;" href="https://www.zeitverschiebung.net/en/country/ke"><span style="color:gray;">Current local time in</span><br />Kenya</a></h3> <iframe title= "Web Access Link" src="https://www.zeitverschiebung.net/clock-widget-iframe-v2?language=en&size=medium&timezone=Africa%2FNairobi" width="100%" height="115" frameborder="0" seamless></iframe> </div>
         <style> @import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&display=swap'); </style>
     </head>
+    
     <style>
+        text-align: center;
         body
         {
             margin: 0;
-            text-align: center;
             font-family: 'Merriweather', serif;
             padding-top: 100px;
             color: #40514e;
@@ -42,8 +43,8 @@
             text-decoration: underline;
         }
         img
-{
-    width: 30%;
+{ width: 250px;
+    /* width: 30%; */
 }
 img:hover
 {
@@ -51,21 +52,29 @@ img:hover
 }
 .skill-row
 {
-    width: 50%;
-    margin: 100px auto 100px auto;
-    text-align: left;
+  display: flex; 
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
 }
 .poster-png
 {
-    width: 30%;
-    float: left;
-    margin-right: 30px;
+    
 }
 .poster-png:hover
 {
   background-color: gold;
 }
-        .live
+.dev1:hover
+{
+    background-color: gold;
+}
+.videoedit:hover
+{
+  background-color: gold;
+}
+/* .live
 {
     background: #11cdd4;
     background-image: -webkit-linear-gradient(top, #11cdd4, #11999e);
@@ -91,35 +100,8 @@ img:hover
     background-image: -o-linear-gradient(top, #30e3cb, #2bc4ad);
     background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
     text-decoration: none;
-}
-      .cont
-{
-    background: #11cdd4;
-    background-image: -webkit-linear-gradient(top, #11cdd4, #11999e);
-    background-image: -moz-linear-gradient(top, #11cdd4, #11999e);
-    background-image: -ms-linear-gradient(top, #11cdd4, #11999e);
-    background-image: -o-linear-gradient(top, #11cdd4, #11999e);
-    background-image: linear-gradient(to bottom, #11cdd4, #11999e);
-    -webkit-border-radius: 8;
-    -moz-border-radius: 8;
-    border-radius: 8px;
-   font-family: 'Montserrat', sans-serif;
-   color: #ffffff;
-   font-size: 20px;
-   padding: 10px 20px 10px 20px;
-   text-decoration: none;
-}
-   .cont:hover
-{
-    background: #30e3cb;
-    background-image: -webkit-linear-gradient(top, #30e3cb, #2bc4ad);
-    background-image: -moz-linear-gradient(top, #30e3cb, #2bc4ad);
-    background-image: -ms-linear-gradient(top, #30e3cb, #2bc4ad);
-    background-image: -o-linear-gradient(top, #30e3cb, #2bc4ad);
-    background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
-    text-decoration: none;
-}   
-        .hobbies
+} */
+.hobbies
 {
     background: #11cdd4;
     background-image: -webkit-linear-gradient(top, #11cdd4, #11999e);
@@ -146,13 +128,9 @@ img:hover
     background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
     text-decoration: none;
 }
-.videoedit:hover
-{
-  background-color: gold;
-}
 .middle-container
 {
-    margin: 100px 0;
+    /* margin: 100px 0; */
 }
 .intro
 {
@@ -167,12 +145,12 @@ p
 {
     position: absolute;
     right: 300px;
-    top: 50px;
+    top: 40px;
 }
 .bottom-cloud
 {
     position: absolute;
-    left: 300px;
+    left: 250px;
     bottom: 300px;
 }
 hr
@@ -214,6 +192,33 @@ hr
     background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
     text-decoration: none;
 }
+.cont
+{
+    background: #11cdd4;
+    background-image: -webkit-linear-gradient(top, #11cdd4, #11999e);
+    background-image: -moz-linear-gradient(top, #11cdd4, #11999e);
+    background-image: -ms-linear-gradient(top, #11cdd4, #11999e);
+    background-image: -o-linear-gradient(top, #11cdd4, #11999e);
+    background-image: linear-gradient(to bottom, #11cdd4, #11999e);
+    -webkit-border-radius: 8;
+    -moz-border-radius: 8;
+    border-radius: 8px;
+   font-family: 'Montserrat', sans-serif;
+   color: #ffffff;
+   font-size: 20px;
+   padding: 10px 20px 10px 20px;
+   text-decoration: none;
+}
+   .cont:hover
+{
+    background: #30e3cb;
+    background-image: -webkit-linear-gradient(top, #30e3cb, #2bc4ad);
+    background-image: -moz-linear-gradient(top, #30e3cb, #2bc4ad);
+    background-image: -ms-linear-gradient(top, #30e3cb, #2bc4ad);
+    background-image: -o-linear-gradient(top, #30e3cb, #2bc4ad);
+    background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
+    text-decoration: none;
+}
 .bottom-container
 {
     background-color: #66bfbf;
@@ -240,6 +245,12 @@ a:hover
 {
     width: 6%;
 }
+@media screen and ( max-width: 810px) {
+.skill-row{
+    flex-direction: column;
+}
+}
+font-size: 
     </style>
 
     <body>
@@ -260,22 +271,25 @@ a:hover
         <div class="Skills">
              <h2> My Skills.</h2>
              <div class="skill-row">
-                <img class="dev1" src="images.png" alt="">
+                <div> <img class="dev1" src="images.png" alt="">
                 <h3>Design and Development</h3>
-                <p>I developed interest in coding when I was 14 years old and later began the journey as I had the desire to make my own code for a talking robot . Over time I have gained lots and lots of knowledge and experience in programming and developing web applications.</p>
-                <img class="live" src="live1.png" alt="">
+                <a class="hobbies" href="Dev.html">More on Design...</a>
+            </div>
+                
+                <div><img class="live" src="web.me.png" alt="">
                 <h3>Livestreaming</h3> 
-                <p> This is a skill that has grown over time and one that I really enjoy doing. I serve God by streaming church services or educational activities online<a class="live" href="https://web.facebook.com/100068859581695/videos/1100650153982053/?notif_id=1672565763270686&notif_t=feedback_reaction_generic&ref=notif"> MUTCU.</a></p>
-                <img class="poster-png" src="DigitalMinistry.png" alt="">
+                <a class="hobbies" href="livestreaming.html">My Live videos...</a>
+            </div>
+            <div><img class="poster-png" src="DigitalMinistry.png" alt="">
                 <h3>Poster Making</h3>
-                <p>This one has come to be my hobby. I usually do posters to mobilize people for certain occasions but also birthday cards and any other type of cards. </p>
-                <video width="320" height="240" controls>
-                    <source class="videoedit" src="videoedit.mp4" type="video/mp4">
-                  </video>
+                <a class="hobbies" href="posters1.html">More posters...</a>
+            </div>
+            <div> <img src="videoedit.png" alt="">
                 <h3>Video Editing</h3>
-                <p>This one has come to be my hobby also and I really enjoy doing it in my free time. I usually edit videos to mobilize people for certain occasions or for advertisement. </p>     
+                <a class="hobbies" href="VideoEditing1.html">More on my edits...</a>
+            </div>
              </div>
-        </div> 
+        </div>
         <hr>
         <div class="Hobbies">
             <h2> My Hobbies</h2>
@@ -311,18 +325,17 @@ a:hover
               </div>
             </form>
         </div>
-        </div>
       </div>
       <div class="bottom-container">
-         <a class="footer-link" href="https://www.linkedin.com/in/gitau-mark-433009262/" >Linkedln</a>
-         <a class="footer-link" href="https://twitter.com/GitauMark1" >Twitter</a>
-         <a class="footer-link" href="https://wa.me/729934671" >Whatsapp</a>
-         <a class="footer-link" href="https://web.facebook.com/profile.php?id=100072778362304" >Facebook</a>
-         <a class="footer-link" href="https://www.instagram.com/gitau6732/" >Instagram</a>
+         <a class="footer-link" href="https://www.linkedin.com/jobs/" >Linkedln</a>
+         <a class="footer-link" href="https://twitter.com/home" >Twitter</a>
+         <a class="footer-link" href="https://web.whatsapp.com" >Whatsapp</a>
+         <a class="footer-link" href="https://web.facebook.com/" >Facebook</a>
+         <a class="footer-link" href="https://www.instagram.com/" >Instagram</a>
          <a class="footer-link" href="https://mutcu.org/" >Website</a>
          <div>
             <img class="phone-png" src="phone.png" alt="Phone Image">
-             <h3><a class="cont" href="tel:0729934671"> 0729934671</a></h3>
+            <h3><a class="cont"> 0729934671</a></h3>
          </div>
          <p><a class="copyright">©2023MarkGitau@De-Scientist.</a></p>
       </div>
